@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+      <link rel="stylesheet" href="./public/css/style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Vite App</title>
+   </head>
+   <body>
+      <header class="header">
+         <nav class="navigation">
+            <article class="navigation__item">
+               <p class="navigation__item--logo">Vision.R</p>
+            </article>
+            <ul class="navigation__item">
+               <li class="navlink"><a href="#">Low Solution</a></li>
+               <li class="navlink"><a href="#">Low technology</a></li>
+               <li class="navlink"><a href="#">High Price</a></li>
+               <li class="navlink"><button class="cta">Buy it</button></li>
+            </ul>
+         </nav>
+         <article class="header__wrapper">
+            <p class="small_paragraph header__text">Du JAMAIS VU (enfin jusqu’à maintenant, du coup)</p>
+            <h1 class="big_paragraph header__catchphrase">Avec Vision.R, travaillez au bureau... comme si vous étiez encore à la maison !</h1>
+            <article class="header__sale">
+               <article class="sale__wrapper">
+                  <h6 class="sale__wrapper--title">Offre speciale</h6>
+                  <p class="sale__wrapper--price">799,99€*</p>
+                  <p class="sale__wrapper--minus">*au lieu de 1.499,99€</p>
+               </article>
+            </article>
+         </article>
+      </header>
+
+      <main>
+         <article class="buy-it">
+            <p class="small_paragraph buy-it__text">
+               Vision.R with a grand “R” like in the mot “Revolution” ! You are afraid to feel déstabilized with the futur retour au bureau ? With rScreenz, be
+               rassuré.e.s ! Get instant, real time, high resolution, social videocall and feel comme à la maison. Bref, get ready to faire un carton !
+            </p>
+            <button class="cta buy-it__cta" id="buy_it">Buy it now</button>
+         </article>
+
+         <article class="technologies">
+            <article class="technologies__item">
+               <h2 class="big_paragraph technologies__item--title">The most advanced technology</h2>
+               <p class="small_paragraph technologies__item--text--mobile">
+                  We travelled all around the world, we rencontred all the Carton-Plume Masters to rapporter only the best.
+               </p>
+               <p class="small_paragraph technologies__item--text--desktop">
+                  Only 3mm of Carton-Plume de qualité for une expérience maximale ! We travelled all around the world, we rencontred all the Carton-Plume
+                  Masters to rapporter only the best
+               </p>
+            </article>
+            <article class="technologies__item">
+               <img src="./img/technologies.png" alt="Technologies illustration" />
+            </article>
+         </article>
+
+         <article class="photos carrousel">
+            <section class="photos__wrapper carrousel__wrapper">
+               <article class="photos__wrapper--items carrousel__item">
+                  <img src="./img/Slider_1.png" alt="slider img" />
+               </article>
+               <article class="photos__wrapper--items carrousel__item">
+                  <img src="./img/Slider_2.png" alt="slider img" />
+               </article>
+               <article class="photos__wrapper--items carrousel__item">
+                  <img src="./img/Slider_3.png" alt="slider img" />
+               </article>
+
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <section class="carrousel__status">
+               <span class="dot dot_img" onclick="currentSlide(1)"></span>
+               <span class="dot dot_img" onclick="currentSlide(2)"></span>
+               <span class="dot dot_img" onclick="currentSlide(3)"></span>
+            </section>
+         </article>
+
+         <article class="get-ready">
+            <article class="get-ready__item">
+               <!-- <img src="./img/lock_visuel.png" alt="Google meet without get-ready" /> -->
+            </article>
+            <article class="get-ready__item">
+               <img class="get-ready__item--icon" src="./img/Lock.svg" alt="Lock icon" />
+               <h2 class="big_paragraph get-ready__item--title">The pudique (or je suis en pyjama et j’assume pas) effect</h2>
+               <p class="small_paragraph get-ready__item--text">
+                  Start from zero, choose your background and create your new life while impressing the collègues.
+               </p>
+            </article>
+         </article>
+
+         <article class="avis carrousel">
+            <section class="avis__wrapper carrousel__wrapper">
+               <article class="avis__item carrousel__item">
+                  <q class="big_paragraph quote">“ Le grand écart technologique que tout le monde attendait ! ”</q>
+                  <p class="small_paragraph author">Jean-Claude Van Damme</p>
+               </article>
+               <article class="avis__item carrousel__item">
+                  <q class="big_paragraph quote">“ Le grand écart technologique que tout le monde attendait ! ”</q>
+                  <p class="small_paragraph author">Jean-Claude Van Damme</p>
+               </article>
+               <article class="avis__item carrousel__item">
+                  <q class="big_paragraph quote">“ Le grand écart technologique que tout le monde attendait ! ”</q>
+                  <p class="small_paragraph author">Jean-Claude Van Damme</p>
+               </article>
+               <a class="prev" onclick="plusQuotes(-1)">&#10094;</a>
+               <a class="next" onclick="plusQuotes(1)">&#10095;</a>
+            </section>
+            <section class="carrousel__status">
+               <span class="dot dot_quote" onclick="currentQuote(1)"></span>
+               <span class="dot dot_quote" onclick="currentQuote(2)"></span>
+               <span class="dot dot_quote" onclick="currentQuote(3)"></span>
+            </section>
+         </article>
+
+         <article class="cross-selling">
+            <h2 class="big_paragraph cross-selling_title">Some indispensables accessoires to optimize your experience</h2>
+            <article class="cross-selling__item">
+               <article class="cross-selling_item--object">
+                  <img src="./img/Product_2.png" alt="Product_3 image" class="object__image" />
+                  <p class="big_paragraph object__title">The funny filter kit (D’jeuns friendly)</p>
+                  <p class="small_paragraph object__price">199,00 €</p>
+               </article>
+               <article class="cross-selling_item--object">
+                  <img src="./img/Product_1.png" alt="Product_1 image" class="object__image" />
+                  <p class="big_paragraph object__title">Screen camera off</p>
+                  <p class="small_paragraph object__price">229,00 €</p>
+               </article>
+               <article class="cross-selling_item--object">
+                  <img src="./img/Product_3.png" alt="Product_3 image" class="object__image" />
+                  <p class="big_paragraph object__title">The Charentaiz (Yeuv Friendly)</p>
+                  <p class="small_paragraph object__price">349,95 €</p>
+               </article>
+            </article>
+         </article>
+
+         <article class="modal" id="modal">
+            <section class="modal__content">
+               <section class="modal__header">
+                  <button class="close" id="modal_close">&times;</button>
+               </section>
+               <section class="modal__body">
+                  <img src="./public/img/monkey.png" alt="Monkey emoji" />
+                  <h1>Vous y avez (vraiment?) cru ?</h1>
+                  <p>
+                     En tout cas, on espère que ça vous a fait sourire, parce qu’on en a bien besoin en ce moment.<span>
+                        Et sinon, vous avez sûrement des produits plus intéressants à vendre.</span
+                     >
+                  </p>
+                  <p>Ça tombe bien, nos équipes sont plus fortes en communication digitale qu’en innovations en carton.</p>
+               </section>
+            </section>
+         </article>
+      </main>
+
+      <footer>
+         <article class="footer__logo">
+            <img src="./img/Logo Colorz.svg" alt="Colorz Logo" />
+         </article>
+         <article class="footer_wrapper">
+            <article class="footer__infos">
+               <section class="infos__items">
+                  <h3 class="big_paragraph infos__items--title">Paris</h3>
+                  <address class="small_paragraph infos__items--address">
+                     16 bis avenue Parmentier <br />
+                     75011 Paris, France
+                  </address>
+               </section>
+               <section class="infos__items">
+                  <h3 class="big_paragraph infos__items--title">Lyon</h3>
+                  <address class="small_paragraph infos__items--address">
+                     1 rue Lalande<br />
+                     69006 Lyon, France
+                  </address>
+               </section>
+               <section class="infos__items">
+                  <h3 class="big_paragraph infos__items--title">Nous contacter</h3>
+                  <p class="small_paragraph infos__items--address">
+                     <a href="tel:+33 (0)1 82 83 83 60">+33 (0)1 82 83 83 60</a><br />
+                     <a href="mailto:hello@colorz.fr">hello@colorz.fr</a>
+                  </p>
+               </section>
+            </article>
+            <article class="footer__cp">
+               <img src="./img/Logo Created to Create.svg" alt="copyright logo" />
+            </article>
+         </article>
+      </footer>
+
+      <script src="main.js"></script>
+      <script src="./public/js/img_carrousel.js"></script>
+      <script src="./public/js/quote_carrousel.js"></script>
+      <script src="./public/js/modal.js"></script>
+   </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "test-colorz",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass --watch ./src/scss/style.scss:./public/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.53.0",
+    "vite": "^2.9.9"
+  }
+}
